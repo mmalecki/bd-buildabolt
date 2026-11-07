@@ -74,8 +74,3 @@ def nut_data(options=None, kind=DEFAULT_NUT_KIND):
     if isinstance(options, NutData):
         return options
     raise TypeError("nut must be a size string or NutData")
-
-
-# Query spelling retained for callers migrating from CadQuery.
-boltData = bolt_data
-nutData = nut_data

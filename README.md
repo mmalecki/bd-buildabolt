@@ -81,9 +81,6 @@ and `countersunk`; nut kinds are `hexagon` (default), `hexagon_thin`, and
 `hexagon_lock`. `nut_thickness` retains the optional dataset field; pockets use
 `thickness`, matching the original package.
 
-The old query spellings `boltData` and `nutData` are aliases, but now return
-dataclasses too.
-
 ## Objects
 
 All objects accept a size string or the corresponding dimensions dataclass.
@@ -151,4 +148,3 @@ by Maciej Małecki and retains its MIT license and attribution.
   [BOLTS](https://github.com/boltsparts/boltsparts)
 - [cqparts_fasteners](https://cqparts.github.io/cqparts/doc/cqparts_fasteners/)
 - [cq_warehouse](https://cq-warehouse.readthedocs.io/en/latest/fastener.html)
-- [catchnhole](https://github.com/mmalecki/catchnhole), a similar OpenSCAD library
