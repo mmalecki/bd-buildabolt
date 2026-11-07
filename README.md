@@ -11,6 +11,7 @@ Requires Python 3.11+ and build123d 0.13.
 
 ```sh
 uv add bd-buildabolt
+# or, to use a local checkout:
 uv add --editable /path/to/bd-buildabolt
 ```
 
