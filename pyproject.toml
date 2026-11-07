@@ -1,22 +1,23 @@
-[tool.poetry]
+[project]
 name = "bd-buildabolt"
 version = "0.0.0"
 description = "Standard fastener holes and nut pockets for build123d"
-authors = ["Maciej Małecki <me@mmalecki.com>"]
+authors = [{ name = "Maciej Małecki", email = "me@mmalecki.com" }]
 readme = "README.md"
-packages = [{ include = "bd_buildabolt" }]
-include = ["bd_buildabolt/*.json"]
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11,<3.15"
+dependencies = ["build123d>=0.13,<0.14"]
 
-[tool.poetry.dependencies]
-python = ">=3.11,<3.15"
-build123d = ">=0.13,<0.14"
-
-[tool.poetry.group.dev.dependencies]
-pytest = ">=8"
+[dependency-groups]
+dev = ["pytest>=8"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["uv_build>=0.13.7,<0.14"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = ""

@@ -128,9 +128,9 @@ query subscripts such as `data["diameter"]` with `data.diameter`.
 ## Development
 
 ```sh
-poetry install
-poetry run pytest
-poetry build
+uv sync
+uv run pytest
+uv build
 ```
 
 Datasets are bundled inside `bd_buildabolt/`, so installed wheels do not depend
