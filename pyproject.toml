@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "bd-buildabolt"
-version = "0.1.2"
+version = "0.0.0"
 description = "Standard fastener holes and nut pockets for build123d"
 authors = ["Maciej Małecki <me@mmalecki.com>"]
 readme = "README.md"
