@@ -1,5 +1,5 @@
 """All five fastener tools; run from an installed bd-buildabolt checkout."""
-from build123d import Box, BuildPart, Locations
+from build123d import Box, BuildPart, Locations, export_step
 from bd_buildabolt import (
     BoltHole, CounterBoreBoltHole, CounterSinkBoltHole,
     NutcatchParallel, NutcatchSidecut,
@@ -18,4 +18,4 @@ with BuildPart() as model:
     with Locations((20, 0, 0)):
         NutcatchSidecut("M3")
 
-result = model.part
+export_step(model.part, "simple.step")
