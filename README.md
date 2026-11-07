@@ -10,9 +10,8 @@ Workplane monkey-patching is needed.
 Requires Python 3.11+ and build123d 0.13.
 
 ```sh
-pip install bd-buildabolt
-# Or install this checkout:
-pip install .
+uv add bd-buildabolt
+uv add --editable /path/to/bd-buildabolt
 ```
 
 ## Builder mode
