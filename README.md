@@ -50,7 +50,7 @@ builder, `depth=None` selects a through hole using build123d's native sizing.
 Counterbores and countersinks include native build123d tool extensions above
 the entry plane; their bounding boxes are not the physical fastener dimensions.
 
-See [examples/build123d_simple.py](examples/build123d_simple.py) for all five objects.
+See [examples/simple.py](examples/simple.py) for all five objects.
 
 ## Dataclass queries
 
