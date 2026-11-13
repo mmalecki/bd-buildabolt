@@ -1,6 +1,6 @@
 [project]
 name = "bd-buildabolt"
-version = "0.0.0"
+version = "0.0.1"
 description = "Standard fastener holes and nut pockets for build123d"
 authors = [{ name = "Maciej Małecki", email = "me@mmalecki.com" }]
 readme = "README.md"
