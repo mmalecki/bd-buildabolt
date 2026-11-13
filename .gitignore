@@ -7,5 +7,3 @@ venv/
 __pycache__
 dist/
 .pytest_cache/
-# Reference dataset repository cloned by scripts/build
-vendor/

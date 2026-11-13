@@ -1,13 +1,14 @@
 #!/usr/bin/env node
 const fs = require('fs')
+const path = require('path')
 const assert = require('assert')
 const yaml = require('yaml')
 
-const path = process.env.BOLTS_PATH || 'vendor/BOLTS'
-const output = process.env.DATA_OUTPUT_PATH || 'bd_buildabolt'
+const input = process.env.BOLTS_PATH || path.join(__dirname, '..', 'vendor', 'boltsparts')
+const output = process.env.DATA_OUTPUT_PATH || path.join(__dirname, '..', 'bd_buildabolt')
 
-const nuts = yaml.parse(fs.readFileSync(`${path}/data/nut.blt`, 'utf8'))
-const bolts = yaml.parse(fs.readFileSync(`${path}/data/hex_socket.blt`, 'utf8'))
+const nuts = yaml.parse(fs.readFileSync(`${input}/data/nut.blt`, 'utf8'))
+const bolts = yaml.parse(fs.readFileSync(`${input}/data/hex_socket.blt`, 'utf8'))
 
 const processClass = (spec, id, parameterMappings) => {
   const class_ = spec.classes.find(c => c.id == id)

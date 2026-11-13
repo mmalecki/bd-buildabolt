@@ -1,0 +1,15 @@
+{
+  "name": "@mmalecki/bd-buildabolt-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Scripts for building bd-buildabot datasets",
+  "license": "MIT",
+  "author": "Maciej Małecki <me@mmalecki.com>",
+  "type": "commonjs",
+  "scripts": {
+    "build": "./build-dataset"
+  },
+  "dependencies": {
+    "yaml": "^2.9.1"
+  }
+}
