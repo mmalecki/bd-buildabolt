@@ -4,8 +4,12 @@ version = "0.0.0"
 description = "Standard fastener holes and nut pockets for build123d"
 authors = [{ name = "Maciej Małecki", email = "me@mmalecki.com" }]
 readme = "README.md"
-license = "MIT"
-license-files = ["LICENSE"]
+license = "MIT AND LGPL-2.1-or-later"
+license-files = [
+    "LICENSE",
+    "LICENSES/LGPL-2.1-or-later.txt",
+    "bd_buildabolt/DATA-LICENSE.md",
+]
 requires-python = ">=3.11,<3.15"
 dependencies = ["build123d>=0.13,<0.14"]
 

@@ -139,10 +139,29 @@ on the working directory. To regenerate them from BOLTS, run
 to `bd_buildabolt/`, the single source of dataset files. Its BOLTS reference
 checkout under `vendor/` is ignored by Git.
 
+## Licensing
+
+This is a mixed-license distribution:
+
+- The Python code, generator scripts, and original documentation retain the
+  [MIT license](LICENSE).
+- `bd_buildabolt/bolts.json` and `bd_buildabolt/nuts.json` are modified extracts
+  of BOLTS tables, licensed **LGPL-2.1-or-later**.
+
+See [the data license and attribution notice](bd_buildabolt/DATA-LICENSE.md)
+and [the LGPL text](LICENSES/LGPL-2.1-or-later.txt). These notices and license
+texts are included in both wheels and source distributions.
+
+The distribution's SPDX expression is `MIT AND LGPL-2.1-or-later`: both licenses
+apply to their respective components, not a choice to use the BOLTS data under
+MIT. Using the library does not, by itself, place generated CAD designs under
+LGPL; the license of particular output depends on what it contains.
+
 ## Acknowledgements and prior work
 
-This package is derived from [cq-queryabolt](https://github.com/mmalecki/cq-queryabolt)
-by Maciej Małecki and retains its MIT license and attribution.
+The Python implementation is derived from [cq-queryabolt](https://github.com/mmalecki/cq-queryabolt)
+by Maciej Małecki and retains its MIT license and attribution. The BOLTS-derived
+data has the separate licensing described above.
 
 - The [authors](https://github.com/boltsparts/boltsparts/graphs/contributors) of
   [BOLTS](https://github.com/boltsparts/boltsparts)
